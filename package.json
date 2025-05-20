@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "start": "n8n start"
-  },
+  "start": "concurrently \"n8n\" \"npx -y supergateway --stdio 'npx -y @brightdata/mcp' --port 8000 --baseUrl http://localhost:8000 --ssePath /sse --messagePath /message --cors\""
+},
   "dependencies": {
     "n8n": "^1.93.0",
     "n8n-nodes-puppeteer": "^1.4.1",
-    "@vreden/youtube_scraper": "^1.2.7"
+    "@vreden/youtube_scraper": "^1.2.7",
+    "concurrently": "^9.1.2"
   }
 }
