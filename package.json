@@ -3,7 +3,7 @@
     "start": "n8n start"
   },
   "dependencies": {
-    "n8n": "^1.91.3",
+    "n8n": "^1.93.0",
     "n8n-nodes-puppeteer": "^1.4.1",
     "@vreden/youtube_scraper": "^1.2.7"
   }
